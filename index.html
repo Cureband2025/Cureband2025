@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUREBAND</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" /> <!-- https://fonts.google.com/ -->
+    <link rel="stylesheet" href="css/tooplate-wave-cafe.css">
+<!--
+
+-->
+</head>
+<body>
+  
+  <div class="tm-container">
+    <div class="tm-row">
+      <!-- Site Header -->
+      <div class="tm-left">
+        <div class="tm-left-inner">
+          <div class="tm-site-header">
+            <img src="img/logo.svg" alt="CUREBAND Logo" width="100">
+            <h1 class="tm-site-name">CUREBAND</h1>
+            <script>
+              function pedirNombre() {
+                  let nombre = prompt("Por favor, ingresa tu nombre:");
+                  if (nombre) {
+                      document.querySelector(".tm-site-name").textContent = "Bienvenid@ "+ nombre;
+                  } else {
+                      document.querySelector(".tm-site-name").textContent = "CUREBAND"; // Valor por defecto si no ingresa nada
+                  }
+              }
+              window.onload = pedirNombre;
+          </script>
+          </div>
+          <nav class="tm-site-nav">
+            <ul class="tm-site-nav-ul">
+              <li class="tm-page-nav-item">
+                <a href="#drink" class="tm-page-link active">
+                  <i class="fas fa-book tm-page-link-icon"></i>
+                  <span>HISTORIA</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#about" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>INTRANET</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#special" class="tm-page-link">
+                  <i class="fas fa-cube tm-page-link-icon"></i>
+                  <span>HERRAMIENTAS</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#contact" class="tm-page-link">
+                  <i class="fas fa-comments tm-page-link-icon"></i>
+                  <span>Contacto</span>
+                </a>
+              </li>
+              <li class="tm-page-nav-item">
+                <a href="#equipo" class="tm-page-link">
+                  <i class="fas fa-users tm-page-link-icon"></i>
+                  <span>EQUIPO</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
+      </div>
+      <div class="tm-right">
+        <main class="tm-main">
+          <div id="drink" class="tm-page-content">
+            <!-- Drink Menu Page -->
+            <nav class="tm-black-bg tm-drinks-nav">
+              <ul>
+                <li>
+                  <a href="#" class="tm-tab-link active" data-id="cold">TQ</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="hot">CUREBAND</a>
+                </li>
+                <li>
+                  <a href="#" class="tm-tab-link" data-id="juice">Fruit Juice</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div id="cold" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/hot-cappuccino.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name"> Los Inicios <span class="tm-list-item-price">(1934-1960)</span></h3>
+                    <p class="tm-list-item-description">Tecnoquímicas (TQ) fue fundada en 1934 en Cali, Colombia, con el objetivo de desarrollar y comercializar productos farmacéuticos. Durante estos primeros años, la empresa se consolidó en el mercado nacional gracias a su compromiso con la calidad y la innovación en la industria de la salud.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/tecnoquimicas.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Expansión y Diversificación <span class="tm-list-item-price">(1960-1990)</span></h3>
+                    <p class="tm-list-item-description">En estas décadas, TQ amplió su portafolio de productos más allá del sector farmacéutico, incursionando en el cuidado personal y el consumo masivo. Su crecimiento sostenido le permitió convertirse en una de las compañías líderes en Colombia, consolidando marcas reconocidas en el mercado.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-espresso.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Modernización y Crecimiento Internacional<span class="tm-list-item-price">(1990-2010)</span></h3>
+                    <p class="tm-list-item-description">La empresa fortaleció su infraestructura productiva mediante inversiones en tecnología y mejoras en sus procesos. Además, inició su expansión internacional, llegando a nuevos mercados en Latinoamérica, lo que le permitió competir con grandes compañías del sector.</p>
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/iced-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Innovación y Compromiso con la Sostenibilidad <span class="tm-list-item-price">(2010-Presente)</span></h3>
+                    <p class="tm-list-item-description">Actualmente, TQ es una de las principales compañías farmacéuticas y de consumo en la región. Su enfoque en la innovación, sostenibilidad y responsabilidad social la ha llevado a desarrollar productos que impactan positivamente en la calidad de vida de las personas, manteniendo su liderazgo en la industria.</p>
+                  </div>
+                </div> 
+                                       
+              </div>
+            </div> 
+
+            <div id="hot" class="tm-tab-content">
+              <div class="tm-list">
+              
+                <div class="tm-list-item">          
+                  <img src="img/CurebandAzulRojo.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">ORIGEN Y CREACIÓN<span class="tm-list-item-price">1996</span></h3>
+                    <p class="tm-list-item-description">Cureband fue creada en 1996 por Tecnoquímicas, una empresa líder en el sector de la salud en Colombia. Su desarrollo fue posible gracias a la tecnología de Adhinter, una compañía especializada en adhesivos que permitió fabricar productos como cintas médicas y apósitos adhesivos de alta calidad. Desde su lanzamiento, Cureband se ha enfocado en ofrecer soluciones prácticas y accesibles para el cuidado de heridas y la protección de la piel.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/Productos.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">PRODUCTOS<span class="tm-list-item-price"></span></h3>
+                    <p class="tm-list-item-description">Cureband ofrece una amplia gama de productos, entre los que se incluyen copitos de algodón, algodón en zigzag, alcohol, cintas de fijación (microporoso), gasas, curitas y esparadrapo. Estos insumos están diseñados para prevenir infecciones, proteger heridas y promover la cicatrización, siendo utilizados tanto en hogares como en entornos médicos.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/adhinter.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">ADHINTER<span class="tm-list-item-price"></span></h3>
+                    <p class="tm-list-item-description">La tecnología de adhesivos desarrollada por Adhinter ha sido clave para el éxito de Cureband. Esta innovación ha permitido crear productos seguros, resistentes y cómodos, como cintas médicas y apósitos adhesivos. La sinergia entre Cureband y Adhinter ha fortalecido la reputación de la marca, posicionándola como un referente en el mercado de productos para el cuidado de heridas.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/hot-latte.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">LEGADO<span class="tm-list-item-price"></span></h3>
+                    <p class="tm-list-item-description">Cureband es una marca reconocida por su calidad, innovación y accesibilidad. Respaldada por la trayectoria de Tecnoquímicas y la tecnología de Adhinter, se ha convertido en un elemento básico en botiquines de primeros auxilios en Colombia y otros países de la región. Su compromiso con la salud y el bienestar la consolida como una opción confiable para el cuidado de la piel y las heridas.
+
+                    </p>              
+                  </div>
+                </div>
+                         
+              </div>
+            </div>
+
+            <div id="juice" class="tm-tab-content">
+              <div class="tm-list">
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-1.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Strawberry Smoothie<span class="tm-list-item-price">$12.50</span></h3>
+                    <p class="tm-list-item-description">Here is a short description for the item along with a squared thumbnail.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-2.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Red Berry Smoothie<span class="tm-list-item-price">$14.50</span></h3>
+                    <p class="tm-list-item-description">Here is a list of 4 items or add more. You can use this template for commercial purposes.</p>                    
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-3.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Pineapple Smoothie<span class="tm-list-item-price">$16.50</span></h3>
+                    <p class="tm-list-item-description">Left side logo and main menu are fixed. The video background is fixed.</p>              
+                  </div>
+                </div>
+                <div class="tm-list-item">          
+                  <img src="img/smoothie-4.png" alt="Image" class="tm-list-item-img">
+                  <div class="tm-black-bg tm-list-item-text">
+                    <h3 class="tm-list-item-name">Spinach Smoothie<span class="tm-list-item-price">$18.50</span></h3>
+                    <p class="tm-list-item-description">You are not allowed to redistribute the template ZIP file on other template sites.</p>              
+                  </div>
+                </div>              
+              </div>
+            </div>
+            <!-- end Drink Menu Page -->
+          </div>
+
+          <!-- About Us Page -->
+          <div id="about" class="tm-page-content">
+            <div class="tm-black-bg tm-mb-20 tm-about-box-1">              
+              <h2 class="tm-text-primary tm-about-header">¿QUÉ ES LA INTRANET?</h2>
+              <div class="tm-list-item tm-list-item-2">                
+                <img src="img/pic01.jpg" alt="Image" class="tm-list-item-img tm-list-item-img-big">
+                <div class="tm-list-item-text-2">
+                  <p>La intranet de Tecnoquímicas es una plataforma digital diseñada para facilitar la comunicación, el acceso a la información y la gestión de procesos internos dentro de la compañía. A través de esta herramienta, los colaboradores pueden acceder a documentos corporativos, capacitaciones, noticias internas, directorios y aplicaciones clave para el desarrollo de sus funciones.</p>
+                  <p>Esta red privada permite una interacción segura y eficiente entre las diferentes áreas de la organización, optimizando el flujo de trabajo y mejorando la productividad. Además, la intranet de Tecnoquímicas es un canal fundamental para la difusión de políticas, normativas y actualizaciones estratégicas que contribuyen al crecimiento y alineación de la empresa con sus objetivos.</p>
+                </div>                
+              </div>
+            </div>
+            <div class="tm-black-bg tm-mb-20 tm-about-box-2">              
+              <div class="tm-list-item tm-list-item-2">                
+                <div class="tm-list-item-text-2">
+                  <h2 class="tm-text-primary">How we began</h2>
+                  <p>If you wish to support us, please contact Tooplate. Thank you. Duis bibendum erat nec ipsum consectetur sodales.</p>                  
+                </div>                
+                <img src="img/about-2.png" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">                
+              </div>
+              <p>Donec non urna elit. Quisque ut magna in dui mattis iaculis eu finibus metus. Suspendisse vel mi a lacus finibus vehicula vel ut diam. Nam pellentesque, mi quis ullamcorper.</p>
+            </div>
+          </div>
+          <!-- end About Us Page -->
+
+          <!-- Special Items Page -->
+          <div id="special" class="tm-page-content">
+            <div class="tm-special-items">
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-01.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special One</h2>
+                  <p class="tm-special-item-text">Here is a short text description for the first special item. You are not allowed to redistribute this template ZIP file.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-02.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Second Item</h2>
+                  <p class="tm-special-item-text">You are allowed to download, modify and use this template for your commercial or non-commercial websites.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-03.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Third Special Item</h2>
+                  <p class="tm-special-item-text">Pellentesque in ultrices mi, quis mollis nulla. Quisque sed commodo est, quis tincidunt nunc.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-04.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Special Item Fourth</h2>
+                  <p class="tm-special-item-text">Vivamus finibus nulla sed metus sagittis, sed ultrices magna aliquam. Mauris fermentum.</p>  
+                </div>
+              </div>      
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-05.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">Sixth Sense</h2>
+                  <p class="tm-special-item-text">Here is a short text description for sixth item. This text is four lines.</p>  
+                </div>
+              </div>
+              <div class="tm-black-bg tm-special-item">
+                <img src="img/special-06.jpg" alt="Image">
+                <div class="tm-special-item-description">
+                  <h2 class="tm-text-primary tm-special-item-title">DESCARGAR PROGRAMAS</h2>
+                  <p class="tm-special-item-text"><button> <a href="descargas.html"> descarga</a></button></p>  
+                </div>
+              </div>                      
+            </div>            
+          </div>
+          <!-- end Special Items Page -->
+
+          <!-- Contact Page -->
+          <div id="contact" class="tm-page-content">
+            <div class="tm-black-bg tm-contact-text-container">
+              <h2 class="tm-text-primary">Contact Wave</h2>
+              <p>Wave Cafe Template has a video background. You can use this layout for your websites. Please contact Tooplate's Facebook page. Tell your friends about our website.</p>
+            </div>
+            <div class="tm-black-bg tm-contact-form-container tm-align-right">
+              <form action="" method="POST" id="contact-form">
+                <div class="tm-form-group">
+                  <input type="text" name="name" class="tm-form-control" placeholder="Name" required="" />
+                </div>
+                <div class="tm-form-group">
+                  <input type="email" name="email" class="tm-form-control" placeholder="Email" required="" />
+                </div>        
+                <div class="tm-form-group tm-mb-30">
+                  <textarea rows="6" name="message" class="tm-form-control" placeholder="Message" required=""></textarea>
+                </div>        
+                <div>
+                  <button type="submit" class="tm-btn-primary tm-align-right">
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end Contact Page -->
+          <div id="equipo" class="tm-page-content">
+            <div class="tm-black-bg tm-equipo-text-container">
+              <h2 class="tm-text-primary">EQUIPO</h2>
+              <p>Mi equipo</p>
+            </div>
+        </main>
+      </div>    
+    </div>
+    
+  </div>
+    
+  <!-- Background video -->
+  <div class="tm-video-wrapper">
+      <i id="tm-video-control-button" class="fas fa-pause"></i>
+      <video autoplay muted loop id="tm-video">
+          <source src="video/wave-cafe-video-bg.mp4" type="video/mp4">
+      </video>
+  </div>
+
+  <script src="js/jquery-3.4.1.min.js"></script>    
+  <script>
+
+    function setVideoSize() {
+      const vidWidth = 1920;
+      const vidHeight = 1080;
+      const windowWidth = window.innerWidth;
+      const windowHeight = window.innerHeight;
+      const tempVidWidth = windowHeight * vidWidth / vidHeight;
+      const tempVidHeight = windowWidth * vidHeight / vidWidth;
+      const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
+      const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
+      const tmVideo = $('#tm-video');
+
+      tmVideo.css('width', newVidWidth);
+      tmVideo.css('height', newVidHeight);
+    }
+
+    function openTab(evt, id) {
+      $('.tm-tab-content').hide();
+      $('#' + id).show();
+      $('.tm-tab-link').removeClass('active');
+      $(evt.currentTarget).addClass('active');
+    }    
+
+    function initPage() {
+      let pageId = location.hash;
+
+      if(pageId) {
+        highlightMenu($(`.tm-page-link[href^="${pageId}"]`)); 
+        showPage($(pageId));
+      }
+      else {
+        pageId = $('.tm-page-link.active').attr('href');
+        showPage($(pageId));
+      }
+    }
+
+    function highlightMenu(menuItem) {
+      $('.tm-page-link').removeClass('active');
+      menuItem.addClass('active');
+    }
+
+    function showPage(page) {
+      $('.tm-page-content').hide();
+      page.show();
+    }
+
+    $(document).ready(function(){
+
+      /***************** Pages *****************/
+
+      initPage();
+
+      $('.tm-page-link').click(function(event) {
+        
+        if(window.innerWidth > 991) {
+          event.preventDefault();
+        }
+
+        highlightMenu($(event.currentTarget));
+        showPage($(event.currentTarget.hash));
+      });
+
+      
+      /***************** Tabs *******************/
+
+      $('.tm-tab-link').on('click', e => {
+        e.preventDefault(); 
+        openTab(e, $(e.target).data('id'));
+      });
+
+      $('.tm-tab-link.active').click(); // Open default tab
+
+
+      /************** Video background *********/
+
+      setVideoSize();
+
+      // Set video background size based on window size
+      let timeout;
+      window.onresize = function(){
+        clearTimeout(timeout);
+        timeout = setTimeout(setVideoSize, 100);
+      };
+
+      // Play/Pause button for video background      
+      const btn = $("#tm-video-control-button");
+
+      btn.on("click", function(e) {
+        const video = document.getElementById("tm-video");
+        $(this).removeClass();
+
+        if (video.paused) {
+          video.play();
+          $(this).addClass("fas fa-pause");
+        } else {
+          video.pause();
+          $(this).addClass("fas fa-play");
+        }
+      });
+    });
+      
+  </script>
+</body>
+</html>
